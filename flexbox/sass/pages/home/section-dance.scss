@@ -1,0 +1,72 @@
+.dance {
+    background-image: url("../images/dance.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    &-content {
+        text-align: center;
+        padding-top: 5%;
+        padding-bottom: 9%;
+        @media (max-width:1130px) {
+            padding-bottom: 5%;
+        }
+        &_heading {
+            color: var(--c-white);
+            font-family: 'Montserrat',sans-serif;
+            font-size: 39px;
+            font-weight: 700;
+            &--bar {
+                border-bottom: 2px solid var(--c-redish);
+                padding-bottom: 8px;
+            }
+        }
+
+        &_para {
+            color: var(--c-white);
+            font-family: 'Montserrat',sans-serif;
+            font-size: 17px;
+            font-weight: 400;
+            width: 56%;
+            margin: auto;
+            margin-top: 13px;
+             margin-bottom: 30px;
+        }
+        &_images {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            @media (max-width:1131px) {
+                justify-content: space-around;
+            }
+            @media (max-width:500px) {
+                display: flex;
+                flex-direction: column;
+            }
+
+            &--1 {
+                @media (max-width:1130px) {
+                    padding-right: 2%;
+                }
+                @media (max-width:500px) {
+                    padding-right: 0;
+                    padding-top: 3%;
+                }
+            }
+            &--2 {
+                @media (max-width:1130px) {
+                    padding-left: 2%;
+                }
+                @media (max-width:500px) {
+                    padding-right: 0;
+                    padding-top: 3%;
+                }
+            }
+            &--3 {
+                @media (max-width:1130px) {
+                    padding-top: 3%;
+                }
+            }
+        }
+    }
+
+}

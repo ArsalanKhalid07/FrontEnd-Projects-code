@@ -1,0 +1,69 @@
+.contact {
+        text-align: center;
+        background-color: #0a0e19;
+        padding-bottom: 2%;
+
+     &_block {
+        padding-bottom: 3%;
+     }   
+    &_heading {
+        font-family: 'Oswald',sans-serif;
+        font-size: 50px;
+        font-weight: 300;
+        color: var(--c-white);
+        padding-top: 6%;
+        padding-bottom: 3%;
+
+    }
+    &_form {
+
+    }
+    &_label {
+        border-bottom: 1px solid #3b3e47;
+        padding-bottom: 4px;
+        margin-right: -5px;
+        color: var(--c-white);
+        font-family:'lato';
+        font-weight:400;
+        font-size:16px;
+        &--message {
+            display: block;
+            margin-left: -335px;
+             margin-bottom: 10px;
+             color: var(--c-white);
+             font-family:'lato';
+        font-weight:400;
+        font-size:16px;
+        }
+    }
+    &_input {
+        background-color: transparent;
+        border-bottom: 1px solid #3b3e47;
+        box-shadow: none;
+        padding: 0 6%;
+        &:hover {
+            box-shadow: none;
+        }
+       
+
+    }
+    textarea {
+        margin: 0px;
+        width: 35%;
+        height: 46px;
+        background-color: transparent;
+        border: 1px solid #3b3e47;
+
+    }
+    &_link {
+        color: black;
+        background-color: var(--c-white);
+        padding: 10px 16px;
+        font-family: 'Oswald',sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+
+
+}

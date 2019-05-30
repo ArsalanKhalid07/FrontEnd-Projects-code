@@ -1,0 +1,125 @@
+.footer {
+    &_bg {
+        background-color: #3b3e47;
+    }
+    
+    // 
+
+    &_top {
+        display: flex;
+        align-items: flex-start;
+        padding:2% 0;
+    }
+    &_logo {
+        flex: 1;
+        padding-top: 2%;
+    }
+    &_icon-list {
+        color: var(--c-white);
+        padding-top: 13%;
+    }
+    &_icon-1 , &_icon-2,&_icon-3,&_icon-4,&_icon-5,&_icon-6 {
+        background-color: #141414;
+        padding: 7px 7px;
+        font-size: 13px;
+    } 
+
+
+    // 
+
+    &_news-letter{
+        flex: 1;
+    }
+    &_news-para {
+        font-family: 'Oswald',sans-serif;
+        font-weight: 400;
+        color: var(--c-white);
+    }
+    &_input {
+        background-color: #dfdbdb;
+        padding: 2% 8%;
+        font-size: 13px;
+        font-family: 'lato',sans-serif;
+        font-weight: 400;
+    }
+    &_link {
+        display: block;
+        color: var(--c-white);
+        background-color: #dc482a;
+        width: 24%;
+        padding: 2% 3%;
+        font-family: 'Oswald',sans-serif;
+        font-weight: 400;
+        margin-top: 4%;
+
+    }
+
+
+    // 
+
+    &_nav {
+        flex: 1;
+    
+        &-heading {
+            font-family: 'Oswald',sans-serif;
+            font-weight: 400;
+            color: var(--c-white);
+        }
+        &-list {
+            list-style: none;
+            
+        :not(:last-child){
+                border-bottom: 2px solid #252525;
+
+            }
+        }
+        &-item {
+            padding: 2% 0%;
+            width: 65%;
+            font-family: 'lato';
+            font-weight: 400;
+            font-size: 13px;
+        }
+        &-link {
+            color: #acacac;
+            margin-left: 15px;
+        }
+         &-icon ,i.footer_nav-icon  {
+            color: #c5452b;
+            border-bottom: 0;
+        }
+    }
+
+    // 
+    &_bottom-bg {
+        background-color: #0e0e0e;
+    }
+    &_bottom {
+        display: flex;
+       justify-content: space-between;
+    }
+    &_rights{
+        flex: 1;
+        font-size: 13px;
+        font-weight: 'lato';
+        font-weight: 400;
+        color: #666666;
+        @media (max-width:1160px) {
+            display: flex;
+            flex: 0 0 30%;
+            justify-content: center;
+        }
+    }
+    &_policy{
+        font-size: 13px;
+        font-weight: 'lato';
+        font-weight: 400;
+        color: #666666;
+        @media (max-width:1160px) {
+            display: flex;
+            flex: 0 0 30%;
+            justify-content: center;
+        }
+    }
+
+}

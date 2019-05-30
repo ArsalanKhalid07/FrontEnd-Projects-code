@@ -1,0 +1,83 @@
+.events {
+    // 
+    &_content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        padding-top: 5%;
+        padding-bottom: 3%;
+        @media (max-width:1115px) {
+            justify-content: center;
+        }
+
+    }
+    &_para {
+        width: 39%;
+        text-align: right; 
+        margin-right: 45px;
+        font-family: 'Montserrat',sans-serif;
+        font-weight: 400;
+        line-height: 30px;
+        color: #202020;
+    }
+    &_heading {
+        color: #202020;
+        width: 34%;
+        font-family: 'Montserrat',sans-serif;
+        font-weight: 700;
+        padding-top: 1%;
+    }
+
+    // 
+
+
+    &_gallery{
+        display: flex;
+        @media (max-width:1115px){
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    }
+    &_img {
+
+        &-1 {
+            @media (max-width:1115px){
+                width: 34%;
+            }
+        }
+        &-2 {
+            @media (max-width:1115px){
+                width: 34%;
+            }
+        }
+        &-3 {
+            @media (max-width:1115px){
+                margin-top: 3%;
+                width: 34%;
+            }
+        }
+
+        &-para-1 {
+            font-family: 'Montserrat',sans-serif;
+        font-weight: 400;
+        color: #8d8d8d;
+        margin-top: 8px;       
+        }
+        &-para-2 {
+            font-family: 'Montserrat',sans-serif;
+            font-weight: 700 ;
+            color: #191919;
+        }
+        &-para-3 {
+            color: #333333;
+            font-family: 'Montserrat',sans-serif;
+            font-weight: 400 ;
+            width: 92%;
+            line-height: 27px;  
+        }
+
+    }
+    
+
+
+}

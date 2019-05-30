@@ -1,0 +1,15 @@
+{
+  "name": "flexbox",
+  "version": "1.0.0",
+  "description": "psd to responsive without bootstrap",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^4.12.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "watch:sass": "node-sass  sass/main.scss css/mystyle.css -w"
+  },
+  "author": "",
+  "license": "ISC"
+}
