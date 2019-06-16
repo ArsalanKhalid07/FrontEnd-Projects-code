@@ -1,0 +1,153 @@
+.header{
+    &_bg {
+        background-image: url("../images/Home-bg.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-bottom: 29%;
+
+        @include query(xl_a){
+            padding-bottom: 27%; 
+        }
+
+    }
+    
+    &_logo {
+        width: 73%;
+        height: 75px;
+        @include query(lg){
+            width: 100%;
+            height: auto;
+        }
+    }
+    &_nav {
+        margin-top: 7%;
+    
+    }
+    &_list {
+        display: flex;
+        justify-content: flex-end;
+    }
+    &_item{
+        @include link;
+        font-size: 18px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        align-self: flex-end;
+
+        :hover{
+            border-bottom: 2px solid var(--c-white);
+            padding-bottom: 4px;
+        }
+    }
+    &_link{
+        margin: 0 20px;
+        color:var(--c-white);;
+        @include query(xl_a){
+            margin:  0 14px;
+        }
+    }
+    &_text{
+       margin-top: 11%;
+       @include query(lg) {
+        margin-top: 22%;
+    } 
+    @include query(sm_a) {
+        margin-top: 14%;
+    } 
+       
+       &--top{
+            display: block;
+            font-size: 65px;
+            font-weight: 800;
+            font-family: 'OpenSans',sans-serif;
+            color: var(--c-white);
+            text-transform: uppercase;
+            @include query(lg) {
+                font-size: 52px;
+            }
+            @include query(md) {
+                font-size: 40px;
+            }
+            @include query(sm) {
+                font-size: 32px;
+            }
+        }
+        &--bottom{
+            display: block;
+            font-size: 30px;
+            font-weight: 400;
+            font-family: 'OpenSans',sans-serif;
+            color: var(--c-white);
+            letter-spacing: 18px;
+            word-spacing: 75px; 
+
+            @include query(lg){
+                letter-spacing: 15px;
+                word-spacing: 23px;
+            }
+            @include query(md){
+                font-size: 23px;
+                letter-spacing: 10px;
+                word-spacing: 28px;
+            }
+            @include query(sm){
+                font-size: 19px;
+                letter-spacing: 10px;
+                word-spacing: 9px;
+            
+            }
+            @include query(sm_a){
+                font-size: 18px;
+                letter-spacing: 8px;
+                word-spacing: 8px;
+            
+            }
+        }
+    }
+
+    &_ipad{
+        margin-top: -32%;
+        float: right;
+        box-shadow: 0 0 20px 0px;
+        @include query(xl_a){
+            margin-top: -28%;
+        }
+        @include query(lg){
+            margin-top: 0%;
+        }
+        
+    }
+    .navbar-collapse {
+        flex-grow: 0;
+    }
+    .navbar-expand-lg {
+        justify-content: flex-end;
+        position: absolute;
+        z-index: 2;
+        width: 100%;
+
+        @include query(md_b){
+            width:90%;
+        }
+        @include query(sm_a){
+            width:85%;
+        }
+        }
+        button.navbar-toggler {
+            color: var(--c-white);
+            background-color: var(--c-primary);
+            border: 2px solid var(--c-border);
+        } 
+        .button:focus{
+            outline: transparent;
+        }
+}
+
+// .navbar-header {
+//     span {
+//         border: 2px solid $a-col;
+//         padding: 28% 24%;
+//         border-radius: 4px;
+//         color: $d-col;
+//     }
+// }

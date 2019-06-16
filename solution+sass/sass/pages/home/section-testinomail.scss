@@ -1,0 +1,71 @@
+.testinomail {
+
+    @include query(lg){
+        margin-top: -8%;
+    }
+
+    
+        .owl-carousel .owl-item img {
+            display: block;
+            width: 30%;
+        }
+        .owl-nav {
+            position:relative;
+            
+
+        }
+        .owl-carousel .owl-nav button.owl-prev  {
+            position: absolute;
+            top: -103px;
+            left: 45px;
+
+            @include query(xl){
+                left: 18px;
+            }
+            
+        }
+        .owl-carousel .owl-nav button.owl-next  {
+            position: absolute;
+            top: -107px;
+            right: 51px;
+            @include query(xl){
+                right: 22px;
+            }
+        }
+        .owl-nav span {
+            font-size: 50px;
+            color: #7f7f7f;
+        
+        }
+        
+        
+    &_content {
+        text-align: center;
+        margin-top: 22%;
+    }
+    &_heading {
+        font-family: 'OpenSans',sans-serif;
+             font-weight: 800;
+             color:var(--c-test);
+    }
+    
+     &_img{
+        margin-top: 6%;
+        margin-bottom: 2%;
+        margin: auto;
+    }
+    &_para {
+        font-family: 'Poppins',sans-serif;
+            font-weight: 500;
+        font-size: 14px;
+        color:var(--c-text);
+        line-height: 21px;
+        width: 70%;
+        margin: auto;
+    }
+    &_mobile-img {
+        @include query(lg){
+            margin-top: 8%;
+        }
+    }
+}

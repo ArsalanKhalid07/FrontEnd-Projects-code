@@ -1,0 +1,28 @@
+.client {
+    margin-top: -16%;
+    &_box-shadow {
+        box-shadow: 0 0 7px 0;
+        padding: 6% 4%;
+        background-color: var(--c-white);
+        
+    }
+
+    &_heading{
+        color: var(--c-primary);
+        font-family: 'OpenSans',sans-serif;
+        font-weight: 800;
+        font-size: 33px;
+
+        @include query(md) {
+            font-size: 29px;
+        }
+    }
+    &_b1,&_b2,&_b3{
+        border-bottom: 2px solid var(--c-primary);
+        padding-bottom: 1%;
+        margin: 2px;
+    }
+    &_gallery {
+        margin-top: 3%;
+    }
+}

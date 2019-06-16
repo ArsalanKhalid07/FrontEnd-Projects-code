@@ -1,0 +1,151 @@
+.ourMessage {
+    margin-top: 6%;
+
+    
+    
+    &-A{
+        @include query(lg){
+            margin-bottom: 16%;
+        }
+
+        @include query(sm){
+            margin-bottom: 10%;
+            margin-top: 5%;
+        }
+        &_heading{
+            font-size: 43px;
+            font-family: 'OpenSans',sans-serif;
+            font-weight: 800;
+            color:var(--c-primary);
+            margin-bottom: 8%;
+            
+            
+            @include query(lg){
+                text-align: center;
+            }
+            @include query(md){
+                font-size: 37px;
+            }
+            @include query(sm){
+                font-size: 33px;
+            }
+
+            
+            &--span-1,&--span-2,&--span-3{
+            border-bottom: 2px solid var(--c-border);
+
+            
+            }
+        }
+
+        &_text{
+            color:var(--c-text);
+            width: 79%;
+            line-height: 27px;
+            font-family: 'Poppins',sans-serif;
+            font-weight: 400;
+
+            @include query(lg){
+                text-align: center;
+                width: 100%;
+            }
+            @include query(md){
+                font-size: 15px;
+            }
+            @include query(sm){
+                font-size: 14px;
+            }
+
+        }
+
+    }
+
+    &-B {
+        box-shadow: 0 0 11px 0px;
+        padding: 8% 6%;
+        border-radius: 6px;
+        width: 85%;
+
+
+
+        @include query(xl) {
+            width: 100%;
+        }
+        @include query(lg) {
+            margin-top: -13%;
+        }
+        @include query(sm) {
+            margin-top: 5%;
+            width: 80%;
+            margin: auto;
+            margin-bottom: 7%;
+
+        }
+        
+        &_icon{
+            font-size: 50px;
+            color:var(--c-sec-i);
+        }
+        &_heading{
+            font-family: 'Poppins',sans-serif;
+            font-weight: 700;
+            color:var(--c-sec);
+            margin-top: 6%;
+            margin-bottom: 12%;
+
+            @include query(md){
+              font-size: 1.15rem;
+            }
+        }
+        &_text{
+            color:var(--c-sec);
+            line-height: 27px;
+            font-family: 'Poppins',sans-serif;
+            @include query(md){
+                font-size: 15px;
+              }
+
+              @include query(md){
+                font-size: 14px;
+              }
+        }
+    }
+
+    &-C{
+        background-image: url("../images/mess.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 5% 4%;
+        width: 93%;
+
+        @include query(lg) {
+            margin: 5% auto;
+            width: 100%;
+        }
+
+        &_heading{
+            font-family: 'OpenSans',sans-serif;
+            font-weight: 800;
+            color:var(--c-white);
+            padding-bottom: 17%;
+            text-transform: uppercase;
+            width: 82%;
+
+            @include query(md) {
+                font-size: 1.75rem;
+
+            }
+        }
+        &_text{
+            font-family: 'Poppins',sans-serif;
+            color:var(--c-white);
+            @include query(md) {
+                font-size: 15px;
+
+            }
+
+        }
+    }
+
+
+}

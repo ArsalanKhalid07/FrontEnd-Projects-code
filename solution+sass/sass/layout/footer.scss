@@ -1,0 +1,123 @@
+.footer{
+
+    &-bg {
+        background-image: url("../images/footer.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 20%;
+        padding-bottom: 2%;
+    }
+
+    &_bar {
+        border: 2px solid var(--c-bar);
+        margin-top: 3%;
+    }
+
+    &-info {
+        @include query(sm){
+            text-align: center;
+        }
+        &_text{
+            color: var(--c-white);
+            font-family: 'Raleway',sans-serif;
+            font-weight: 500;
+            font-size: 17px;
+            margin-bottom: 9px;
+            margin-top: 8%;
+
+            @include query(md){
+                font-size: 15px;
+            }
+        }
+        &_icon-call {
+            display: block;
+            color: var(--c-white);
+            font-size: 22px;
+            margin-bottom: 9px;
+        }
+        &_number{
+            font-size: 24px;
+            margin-left: 15px;
+            margin-bottom: 10px;
+            }
+        &_icon-message {
+            display: block;
+            color: var(--c-white);
+            font-size: 16px;
+        }
+        &_email{
+            font-size: 17px;
+            margin-left: 15px;
+        }
+
+
+
+    }
+
+    &_copyright{
+        float: right;
+        color:var(--c-white);
+        margin-top: 19%;
+
+        @include query(lg){
+            margin-top: 26%;
+        }
+        @include query(md){
+            margin-top: 32%;
+        }
+        @include query(sm){
+            margin-top: 2%;
+            float: none;
+            text-align: center;
+        }
+    }
+
+}
+.services {
+    @include query(lg){
+        padding-top: 20%;
+    }
+
+    @include query(md){
+        padding-top: 35%;
+    }
+    @include query(sm){
+        padding-top: 12%;
+    }
+
+    &_heading{
+        font-family: 'Poppins',sans-serif;
+        font-weight: 800;
+        color:var(--c-white);
+        padding-bottom: 4%;
+    }
+    &_item {
+
+    }
+    &_list{
+        @include link;
+        :not(:last-child){
+            line-height: 39px;
+        }
+    }
+    &_link{
+        color:var(--c-white);
+    }
+
+    &_direction {
+        display: flex;
+
+        @include query(sm_a){
+            display: block;
+        }
+    }
+    &_left {
+        flex: 0 0 40%;
+        li:last-child {
+        line-height: 22px;
+       }
+        
+    }
+    
+
+}
