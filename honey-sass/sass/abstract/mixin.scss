@@ -1,0 +1,59 @@
+@mixin  fonts($family,$size,$weight) {
+    font-family: $family;
+    font-size: $size;
+    font-weight: $weight;
+}
+@mixin list {
+       list-style: none;
+       margin: 0;
+       padding: 0;
+    
+     
+}
+@mixin a($main-col,$hover-col,$focus-col) {
+      color:$main-col;
+        text-decoration:none;
+        &:hover {
+            color:$hover-col;
+            text-decoration:none;
+            list-style:none;
+        }
+        &:active,&:focus {
+            color:$focus-col;
+            text-decoration:none;
+            list-style:none;
+            outline:none;
+             outline-offset: none;
+        }
+
+    }
+
+
+// default media query 
+
+@mixin  query($nam) {
+    @if  $nam == lg {
+       @media (max-width:1200px) {@content }; 
+    }
+     @if $nam == md {
+        @media (max-width:992px) {@content};
+    } 
+    @if $nam == sm {
+        @media (max-width:768px) {@content};
+    }
+    @if $nam == sm-1 {
+        @media (max-width:700px) {@content};
+    }
+    @if $nam == sm-2 {
+        @media (max-width:630px) {@content};
+    } 
+    @if $nam == xs {
+        @media (max-width:576px) {@content};
+    }
+    @if $nam == xs-1 {
+        @media (max-width:525px) {@content};
+    }
+    @if $nam == xs-2 {
+        @media (max-width:445px) {@content};
+    } 
+}

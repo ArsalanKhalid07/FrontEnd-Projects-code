@@ -1,0 +1,8 @@
+.secondary-button {
+    @include fonts('lato',12px,$bold);    
+    @include a($white-col,$white-col,$white-col);
+        background-color:$a-col;
+        padding: 14px 40px;
+        display:inline-block;
+        margin-top: 15px;
+}

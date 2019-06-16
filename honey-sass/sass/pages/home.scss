@@ -1,0 +1,134 @@
+.section-collection{
+  
+}
+.collection {
+    text-align: right;
+    @include query(md){
+        text-align: center;
+        margin-bottom: 3%;
+    }
+
+    &_heading{
+        @include fonts('lato',45px,$regular);
+        text-transform: uppercase;
+        margin-bottom: 10px;
+
+        @include query(sm-2){
+            @include fonts('lato',40px,$regular);
+        }
+        @include query(xs-2){
+            @include fonts('lato',36px,$regular);
+        }
+
+        &--span {
+            display: block;
+        }
+    }
+    &_para {
+        color:$para-col;
+        @include query(sm-2){
+            font-size: 15px;
+        }
+    }
+   
+
+}
+
+//section aboutus
+.about-us{
+    background-image: url("../images/about-us.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 4% 0;
+}
+.about-img {
+    @include query(sm){
+        margin: auto;
+    }
+}
+.about-content {
+    &_head-1 {
+        color:$a-col;
+        @include fonts('Dancing Script',30px,$bold);
+    }
+    &_head-2 {
+          @include fonts('Sansita',26px,$bold);
+          margin-top: 0;  
+    }
+    &_para{
+        @include fonts('lato',14px,$regular);
+        color:$para-col;
+    }
+}
+
+//section-carasoul
+.section-carasoul {
+    margin: 4% 0;
+
+    .owl-theme .owl-dots .owl-dot span {
+        border: 1px solid $b-col;
+        background: transparent;
+    }    
+    .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span,.owl-theme .owl-dots .owl-dot:active span {
+        background: $d-col;
+        border: none;
+        outline: transparent;
+        -webkit-tap-highlight-color:transparent;
+    }
+}
+
+.carasoul {
+    text-align: center;
+    &_icon{
+        @include fonts('lato',60px,$regular);
+        color:$a-col;
+
+
+        @include query(md){
+            @include fonts('lato',55px,$regular);
+        }
+        @include query(sm){
+            @include fonts('lato',50px,$regular);
+        }
+        @include query(xs){
+            @include fonts('lato',45px,$regular);
+        }
+
+    }
+
+    &_para {
+        @include fonts('RobotoSlab',20px,$regular);
+        line-height: 36px;
+        width: 65%;
+        margin: 0 auto;
+        color:$b-col;
+        margin-top: 4%;
+         @include query(lg){
+             width: 75%;
+         }
+         @include query(md){
+            width: 85%;
+            @include fonts('RobotoSlab',18px,$regular);
+        }
+
+        @include query(sm){
+            width: 95%;
+            @include fonts('RobotoSlab',16px,$regular);
+        }
+        @include query(xs){
+            width: 100%;
+            @include fonts('RobotoSlab',15px,$regular);
+        }
+
+
+    }
+
+    &_name {
+        color:$d-col;
+            @include fonts('DancingScript',30px,$regular);
+        &--dash{
+            color:$b-col;
+        }
+    }
+
+}

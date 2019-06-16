@@ -1,0 +1,8 @@
+.primary-button {
+    @include fonts('lato',12px,$bold);    
+    @include a($white-col,$white-col,$white-col);
+        background-color: $b-col;
+        padding: 11px 37px;
+        display:inline-block;
+        margin-top: 6px;
+}

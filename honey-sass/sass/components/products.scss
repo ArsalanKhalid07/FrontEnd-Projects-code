@@ -1,0 +1,67 @@
+
+.product {
+    background-image: url("../images/product-1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 33% 0 ;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 4%;
+    background-position: center;
+    @include query(sm){
+        width:60% ;
+    }
+    @include query(xs-1){
+        width: 90%;
+    }
+
+
+    &--2{
+        
+    background-image: url("../images/product-2.png");
+    @extend .product;
+    
+    
+    }
+    &--3{        
+    background-image: url("../images/product-3.png");
+    @extend .product;
+      
+    }
+    &--4{
+    background-image: url("../images/product-4.png");
+    @extend .product;
+   
+}
+    &--5{
+    background-image: url("../images/product-5.png");
+    @extend .product;
+   
+   
+    // @include query(md){
+    //     margin-top:6%;
+   
+    // }
+    // @include query(sm){
+    //     width:80% ;
+    //     margin: auto;
+    // }
+}
+
+    &_text{
+        color: $white-col;
+        @include fonts('lato',22px,$bold);
+        letter-spacing: 4px;
+        margin-bottom: 0;
+    }
+    &_heading {
+        color: $white-col;
+        @include fonts('Sansita',35px,$bold);
+        letter-spacing: 3px;
+        margin-top: 0;
+    }
+}
+
+.poduct-space {
+    margin-top: 2%;
+}

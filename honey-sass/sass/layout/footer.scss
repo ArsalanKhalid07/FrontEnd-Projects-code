@@ -1,0 +1,122 @@
+.footer-bg {
+    background-image: url("../images/footer-bg.png");
+    background-size: cover;
+    padding: 10% 0;
+}
+
+.footer-top {
+    .col-xs-6{
+        @include query(sm-1){
+            width: 100%;
+        }
+    }
+}
+.f-top-1 {
+    text-align: center;
+    @include query(sm-1){
+        margin-bottom: 12%;
+
+    }
+    
+
+    // @include query()
+      &_logo  {
+        width: 41%;
+        text-align: center;
+        margin-bottom: 6%;
+    }
+    &_list{
+        @include list;
+    }
+    &_item{
+       text-align: left;
+         @include query(sm-1){
+            text-align: center;
+            margin-bottom: 4%;
+            }
+        &:not(:last-child){
+            line-height:27px; 
+
+        }
+        color:#999999;
+        &--icon{
+            color:white;
+            margin-right: 22px;
+        }
+        
+    }
+}
+abc{
+    @include fonts('RobotoSlab',14px,$regular);
+        text-transform: uppercase;
+        color:$white-col;
+        @include query(sm-1){
+            width: 100%;
+        }
+}
+.f-top-2 {
+    @include query(md){
+        margin-bottom: 10%;
+    }
+    &_heading{
+        @extend abc;
+        margin-bottom: 16%;
+        &--bar {
+            border-bottom: 1px solid $d-col;
+            padding-bottom: 7px;
+        }
+
+    }
+    &_list {
+        @include list;
+    }
+    &_item {
+        text-align: left;
+        color:#999999;
+        &--link {
+            @include a(#999999,#999999,#999999);
+    
+        }
+        &:not(:last-child){
+            line-height: 27px;
+        }
+    }
+}
+.f-top-3 {
+    &_heading{
+        @extend abc;
+        margin-bottom: 5%;
+        &--bar {
+            border-bottom: 1px solid $d-col;
+            padding-bottom: 7px;
+        }
+
+    }
+    &_list {
+        @include list;
+    }
+    &_item {
+        text-align: left;
+        color:#999999;
+        &--link {
+            @include a(#999999,#999999,#999999);
+    
+        }
+        &:not(:last-child){
+            line-height: 43px;
+        }
+    }
+}
+.footer-bottom {
+    background-color: #111111;
+    padding: 36px  0;
+    border-top: 2px solid #222222;
+    border-bottom: 2px solid  #222222;
+
+    &_text{
+        margin-bottom: 0;
+        text-align: center;
+        color:#999999;
+        @include fonts('lato',13px,$regular);
+    }
+}
