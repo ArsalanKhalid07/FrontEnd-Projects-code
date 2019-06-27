@@ -1,0 +1,136 @@
+                    /* 1200px */
+                    
+@media(max-width:1201px){
+    .img_content-mhead {
+        font-size: 55px;
+    }
+    .img_content-shead {
+        font-size: 35px;
+    }
+    .img_content-button {
+        font-size: 24px;
+    }
+    .myNavBar .list {
+        display: block;
+    }
+    .logo {
+        position: relative;
+    }
+    nav.myNavBar.navbar-expand-xl {
+        position: absolute;
+        right: 0;
+        top: 37%;
+        width: 20%;
+    }
+    div#navbarResponsive {
+        background-color: #cfa54b;
+        border:2px solid #223322;
+        margin-top: 10%;
+    
+    }
+
+}
+
+                    /* 992px */
+   
+ @media(max-width:992px) {
+    .header_bg {
+        padding: 1%;
+    }
+    .header_email-left {
+        justify-content: space-between;
+    }
+    .header_email-1 {
+        border-left: none;
+    }
+    .header_email-2 {
+        border-left: none;
+    }
+    .header_email-3 {
+        border-left: none;
+        border-right: none;
+    }
+    .header_upper-buttons {
+        justify-content: center;
+    }
+    nav.myNavBar.navbar-expand-xl {
+        width: 22%;
+    }
+ }                   
+
+                /* 768px */
+
+ @media(max-width:768px){
+    .header_email-1{
+        display: flex;
+    }
+    .header_email-1 i{
+        align-self: flex-start;
+    }
+    .header_email-2{
+        text-align: center;
+    }
+    i.header_email-icon.fa.fa-phone {
+        font-size: 30px;
+    }
+    .header_email-3{
+        display: flex;
+    }
+    nav.myNavBar.navbar-expand-xl {
+        width: 31%;
+    }
+    .img_content {
+        padding: 18% 0;
+    }
+    .img_content-mhead {
+        font-size: 50px;
+    }
+    .img_content-shead {
+        font-size: 30px;
+    }
+    .img_content-button {
+        font-size: 21px;
+    }
+    .header_upper-buttons{
+        justify-content: space-evenly;
+    }
+ }      
+ @media (max-width:600px){
+    nav.myNavBar.navbar-expand-xl{
+        width: 40%;
+    }
+    .img_content-mhead {
+        font-size: 40px;
+    }
+    .img_content-shead {
+        font-size: 25px;
+    }
+    .img_content-button {
+        font-size: 17px;
+    }
+    
+ }
+ @media(max-width:500px){
+    .header_email-3 {
+        display: block;
+    }
+    .header_email-1 {
+        display: block;    
+    }
+    .header_email-left {
+        display: block;
+        text-align: center;
+    }
+    .header_upper-buttons {
+        justify-content: space-between;
+    }
+    nav.myNavBar.navbar-expand-xl{
+        width: 54%;
+    }
+ }         
+
+ @media (max-width:360px){
+    nav.myNavBar.navbar-expand-xl{
+        width: 60%;
+    }
+ }
